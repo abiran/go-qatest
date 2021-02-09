@@ -1,4 +1,4 @@
-module go-qatest
+module github.com/abiran/go-qatest
 
 go 1.15
 
