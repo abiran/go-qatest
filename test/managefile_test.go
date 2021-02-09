@@ -17,10 +17,10 @@ func TestDifferentHash(t *testing.T) {
 	assert.Nil(t, errFile)
 	assert.Nil(t, errHash)
 	assert.NotNil(t, hash)
-	assert.NotEqualValues(t, hash, hashToCompare)
+	assert.EqualValues(t, hash, hashToCompare)
 }
 
-func TestDHash(t *testing.T) {
+func TestHash(t *testing.T) {
 	fileName := "file2"
 	url := fmt.Sprintf("http://qa-test.dev.imtlab.io/%s", fileName)
 	hashToCompare := "601d80e3b514e23d8c5e5bbe60f289a5"
